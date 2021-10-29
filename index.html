@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d9d33c630f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icon/video-icon.png" type="image/x-icon">
+    <title>Browser Video</title>
+</head>
+<body>
+    <div class="container">
+        <header class="title-place">
+            <p class="title">
+               Video Player
+            </p>
+        </header>
+        <div class="box">
+            <div class="video-place">
+                <video src="video/skate.mp4" id="video" class="screen"></video>
+            </div>
+            <div class="video-but-place">
+                <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+                <div class="controls">
+                    <div class="left-but-place">
+                        <button class="btn" id="play">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="btn" id="stop">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                        <select name="play-fast-slow" id="play-fast-slow">
+                            <option value="0.5">0.5x</option>
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1.0x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2.0">2.0x</option>
+                          </select>
+                    </div>
+                    <div class="right-but-place">
+                        <button class="btn" id="volume">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <span class="input-range">
+                            <input type="range" id="progress-volume" class="progress-volume" min="0" max="1" step="0.1" value="1" />
+                        </span>
+                        <span class="times" id="time-time">00:00</span>  
+                        <button id="full-screen" class="btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
